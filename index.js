@@ -14,11 +14,10 @@ const tutorials = [
 const titleCased = (input) => {
   return tutorials.map(tutorial => {
     let words = tutorial.split(" ")
-    // let capitalizedWords =
+    let capitalizedWords =
     words.map((word) => { 
       return word[0].toUpperCase() + word.substring(1); 
     }).join(" ")
-  // return capitalizedWords
+  return capitalizedWords
   })
 }
-titleCased
